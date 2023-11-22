@@ -24,9 +24,13 @@ const Meme = () => {
     const { url } = allMemes[Math.floor(Math.random() * allMemes.length)];
 
     setMeme((prevMeme) => ({
-      ...prevMeme,
+      // clear the text inputs
+      topText: "",
+      bottomText: "",
       randomImage: url,
     }));
+
+
   };
 
   const handleChange = (event) => {
