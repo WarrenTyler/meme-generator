@@ -17,16 +17,19 @@ export default {
       },
       backgroundImage: (theme) => ({
         "gradient-purple":
-          "linear-gradient(90deg, #672280 1.18%, #A626D3 100%)",
+          "linear-gradient(90deg, #673280 1.18%, #A626D3 100%)",
       }),
       gridTemplateRows: {
-        "form-layout": "40px 40px",
+        // Default grid template (for small screens)
+        "form-layout": "40px 40px 40px",
+        // Medium screens and above (md and larger)
+        "md-form-layout": "40px 50px",
       },
       textShadow: {
-        sm: "0 1px 2px var(--tw-shadow-color)",
         DEFAULT:
           "2px 2px 0 var(--tw-shadow-color), -2px -2px 0 var(--tw-shadow-color), 2px -2px 0 var(--tw-shadow-color), -2px 2px 0 var(--tw-shadow-color), 0 2px 0 var(--tw-shadow-color), 2px 0 0 var(--tw-shadow-color), 0 -2px 0 var(--tw-shadow-color), -2px 0 0 var(--tw-shadow-color), 2px 2px 5px var(--tw-shadow-color)",
-        lg: "0 8px 16px var(--tw-shadow-color)",
+        md: "3px 3px 0 var(--tw-shadow-color), -3px -3px 0 var(--tw-shadow-color), 3px -3px 0 var(--tw-shadow-color), -3px 3px 0 var(--tw-shadow-color), 0 3px 0 var(--tw-shadow-color), 3px 0 0 var(--tw-shadow-color), 0 -3px 0 var(--tw-shadow-color), -3px 0 0 var(--tw-shadow-color), 3px 3px 6px var(--tw-shadow-color)",
+        lg: "4px 4px 0 var(--tw-shadow-color), -4px -4px 0 var(--tw-shadow-color), 4px -4px 0 var(--tw-shadow-color), -4px 4px 0 var(--tw-shadow-color), 0 4px 0 var(--tw-shadow-color), 4px 0 0 var(--tw-shadow-color), 0 -4px 0 var(--tw-shadow-color), -4px 0 0 var(--tw-shadow-color), 4px 4px 7px var(--tw-shadow-color)",
       },
     },
   },
